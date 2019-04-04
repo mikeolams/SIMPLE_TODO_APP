@@ -4,14 +4,17 @@
   "private": true,
   "dependencies": {
     "braces": "^2.3.2",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "homepage" : "https://mikeolams.github.io/SIMPLE_TODO_APP",
+    "homepage": "https://mikeolams.github.io/SIMPLE_TODO_APP",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
