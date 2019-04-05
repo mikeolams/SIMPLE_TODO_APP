@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import  Additem from './components/addItem';
-// import List from './components/List';
+// import Guide from './components/guideIniator';
+import Modal from './components/Modal';
 import Todolists from './components/todoLists';
 // import Endpoint from './components/Server-end-point';
 
@@ -29,10 +30,12 @@ class App extends Component {
       todoItems
     })
   }
+
   render() {
     return (
       <div className="App">
-        <h1 className="center yellow-text">Simple Todo's List</h1>
+        <h1 className="center dark purple-text">Simple Todo's List</h1>
+        <div className="container grey center white-text "><Modal/></div>;
         <div className="container">
           <Todolists todos={this.state.todoItems} removeTodo={this.removeTodoItem}/>
           <Additem addTodo={this.addTodoItem}/>
